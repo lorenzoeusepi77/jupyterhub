@@ -1,0 +1,43 @@
+{
+  "kernel_python_credentials" : {
+    "username": "raffaele",
+    "password": "CiaoMamma1201",
+    "url": "https://daf.teamdigitale.governo.it/livy"
+  },
+
+  "kernel_scala_credentials" : {
+    "username": "raffaele",
+    "password": "CiaoMamma1201",
+    "url": "https://daf.teamdigitale.governo.it/livy"
+  },
+  "kernel_r_credentials": {
+    "username": "",
+    "password": "",
+    "url": "http://localhost:8998"
+  },
+
+  "logging_config": {
+    "version": 1,
+    "formatters": {
+      "magicsFormatter": { 
+        "format": "%(asctime)s\t%(levelname)s\t%(message)s",
+        "datefmt": ""
+      }
+    },
+    "handlers": {
+      "magicsHandler": { 
+        "class": "hdijupyterutils.filehandler.MagicsFileHandler",
+        "formatter": "magicsFormatter",
+        "home_path": "~/.sparkmagic"
+      }
+    },
+    "loggers": {
+      "magicsLogger": { 
+        "handlers": ["magicsHandler"],
+        "level": "DEBUG",
+        "propagate": 0
+      }
+    }
+  }
+
+}

@@ -4,6 +4,7 @@ jupyterhub:
   restart: always
   extra_hosts:
     idm.daf.gov.it: 192.168.0.29
+    livy.default.svc.cluster.local: 192.168.0.27
   links:
       - postgresjupyterhub
   environment:
