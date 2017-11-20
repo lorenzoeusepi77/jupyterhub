@@ -6,8 +6,8 @@
   },
 
   "kernel_scala_credentials" : {
-    "username": "raffaele",
-    "password": "CiaoMamma1201",
+    "username": "",
+    "password": "",
     "url": "https://daf.teamdigitale.governo.it/livy"
   },
   "kernel_r_credentials": {
